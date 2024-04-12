@@ -33,7 +33,7 @@ def extract_each_house(house):
     return {
         'title': data['title'],
         'description': data['top_description_text'] + " - " + data['middle_description_text'],
-        'district': data['bottom_description_text'],
+        'district': data['action']['payload']['web_info']['district_persian'],
         'token': data['token'],
     }
 
@@ -94,8 +94,8 @@ if __name__ == "__main__":
             continue
         if house_data['token'] in tokens:
             continue
-        #if house_data['district'] not in INCLUDE_DISTRICTS:
-        #    continue
+        if house_data['district'] not in INCLUDE_DISTRICTS:
+            continue
 
         tokens.append(house_data['token'])
         send_telegram_message(house_data)
