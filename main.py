@@ -3,7 +3,7 @@ import json
 import os
 #from dotenv import load_dotenv, find_dotenv
 
-load_dotenv(find_dotenv())
+#load_dotenv(find_dotenv())
 
 #SEARCH_URL = os.getenv('SEARCH_CONDITIONS')
 SEARCH_URL = "mashhad/rent-residential?credit=10000000-150000000&rent=3000000-13000000"
