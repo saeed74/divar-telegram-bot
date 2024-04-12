@@ -87,8 +87,8 @@ if __name__ == "__main__":
             continue
         if house_data['token'] in tokens:
             continue
-        if house_data['district'] not in INCLUDE_DISTRICTS:
-            continue
+        #if house_data['district'] not in INCLUDE_DISTRICTS:
+        #    continue
 
         tokens.append(house_data['token'])
         send_telegram_message(house_data)
