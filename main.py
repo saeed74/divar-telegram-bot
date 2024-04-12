@@ -5,10 +5,10 @@ from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
 
-URL = "https://api.divar.ir/v8/web-search/{SEARCH_CONDITIONS}".format(**os.environ)
+URL = "https://api.divar.ir/v8/web-search/{SEARCH_CONDITIONS}".format(**os.getenv)
 TOKENS = list()
-BOT_TOKEN = '{BOT_TOKEN}'.format(**os.environ)
-BOT_CHATID = '{BOT_CHATID}'.format(**os.environ)
+BOT_TOKEN = '{BOT_TOKEN}'.format(**os.getenv)
+BOT_CHATID = '{BOT_CHATID}'.format(**os.getenv)
 
 
 def get_data():
