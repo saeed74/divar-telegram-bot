@@ -32,8 +32,8 @@ def extract_each_house(house):
 
     return {
         'title': data['title'],
-        'description': data['description'],
-        'district': data['district'],
+        'description': data['top_description_text'] + " - " + data['middle_description_text'],
+        'district': data['bottom_description_text'],
         'token': data['token'],
     }
 
