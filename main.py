@@ -5,12 +5,13 @@ from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
 
-SEARCH_URL = os.getenv('SEARCH_CONDITIONS')
+#SEARCH_URL = os.getenv('SEARCH_CONDITIONS')
+SEARCH_URL = "mashhad/rent-residential?credit=10000000-150000000&rent=3000000-13000000"
 
 URL = "https://api.divar.ir/v8/web-search/" + SEARCH_URL
 TOKENS = list()
-BOT_TOKEN =  os.getenv('BOT_TOKEN')
-BOT_CHATID = os.getenv('BOT_CHATID')
+BOT_TOKEN = "6468244388:AAHNduXgSMClUSi6An8iRHwNxr8rRDdD-6I"
+BOT_CHATID = "-4160354534"
 
 
 def get_data():
