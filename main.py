@@ -1,7 +1,7 @@
 import requests
 import json
 import os
-from dotenv import load_dotenv, find_dotenv
+#from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
 
